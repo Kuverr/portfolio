@@ -8,7 +8,7 @@
     --primary: #007bff;
     --secondary: #6c757d;
     --dark: #343a40;
-    --darker: #030305;
+    --darker: #11111c;
     --light: #f4f4f4;
     --hl: #dc3545;
 }
@@ -30,12 +30,15 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
+    position: relative;
 }
 
 #top {
     height: 7%;
     width: 100%;
     display: flex;
+    position: fixed;
+    background: linear-gradient(var(--darker), #FFFFFF00);
 }
 
 #banner b {
@@ -50,6 +53,11 @@ body {
     justify-content: flex-start;
     align-items: center;
     font-size: 1.5rem;
+}
+
+#banner a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #menu {
@@ -109,28 +117,43 @@ main {
     align-items: center;
 }
 
-.textContainer {
+.textSection {
     width: 60%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     padding: 3rem;
     margin: 5rem 0;
+    gap: 2rem;
 }
 
 #start, #contact{
     border-left: 1px solid var(--primary);
 }
 
-.textContainer h2 {
-    width: 100%;
+#start {
+    font-size: 2rem;
     text-align: left;
-    padding: 0 0 2rem 2rem;
+    margin-top: 20rem;
 }
 
-.textContainer b {
+#start p {
+    width: 100%;
+}
+
+#start p i {
+    color: var(--primary);
+    font-style: normal;
+}
+
+.textSection h2 {
+    width: 100%;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+.textSection b {
     color: var(--primary);
     font-weight: normal;
 }
@@ -144,9 +167,29 @@ main {
 
 footer {
     width: 100%;
-    height: 5rem;
-    padding: 2rem;
+    height: auto;
+    padding: .5rem;
+    font-size: .7rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+/*Contact form*/
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#contact form input, #contact form textarea {
+    width: 20%;
+    padding: .5rem;
+    margin: 1rem 0;
+    border: 1px solid  var(--primary);
+    outline: none;
+    background: none;
+    color: white;
+    resize: none;
 }

@@ -10,9 +10,11 @@
 <body>
 <section id="top">
     <div id="banner">
-        <h1>
-            <b>&lt;</b>&nbsp;KUVER&nbsp;<b>/&gt;</b>
-        </h1>
+        <a href="#start">
+            <h1>
+                <b>&lt;</b>&nbsp;Kuverr&nbsp;<b>/&gt;</b>
+            </h1>
+        </a>
     </div>
 
     <div id="menu">
@@ -56,15 +58,15 @@
 
 <main>
 
-    <section id="start" class="textContainer">
+    <section id="start" class="textSection">
         <h2>
             <b>//</b>
             &nbsp;
             Start
         </h2>
         <p>
-            Cześć. Nazywam się Jakub Baran, z zawodu jestem technikiem informatykiem.
-            Z pasji zajmuję się programowaniem, webdesignem oraz grafiką komputerową.
+            Hej, jestem Kuba,<br>
+            tworzę <i id="startCycler">rzeczy</i>
         </p>
     </section>
 
@@ -74,20 +76,43 @@
     <section id="projects">
     </section>
 
-    <section id="contact" class="textContainer">
+    <section id="contact" class="textSection">
         <h2>
             <b>//</b>
             &nbsp;
             Kontakt
         </h2>
+
+        <h3>Moje social media</h3>
+
+        <div id="socialMedia">
+            <a>
+                asd
+            </a>
+            <a>
+                asd
+            </a>
+            <a>
+                asd
+            </a>
+        </div>
+
+<!--        to delete-->
+
+        <h3>Formularz kontaktowy</h3>
+
         <form>
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Wyślij</button>
+            <label for="name">
+                <input type="text" id="name" name="name" placeholder="imię" required>
+            </label>
+            <label for="mail">
+                <input type="email" id="mail" name="mail" placeholder="e-mail" required>
+            </label>
+            <label for="message">
+                <textarea id="message" name="message" placeholder="message" required rows="3"></textarea>
+            </label>
+
+            <input type="submit" value="Wyślij">
         </form>
     </section>
 
