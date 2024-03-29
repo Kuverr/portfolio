@@ -59,15 +59,18 @@
 <main>
 
     <section id="start" class="textSection">
-        <h2>
-            <b>//</b>
-            &nbsp;
-            Start
-        </h2>
-        <p>
-            Hej, jestem Kuba,<br>
-            tworzę <i id="startCycler">rzeczy</i>
-        </p>
+        <div>
+            <h2>
+                <b>//</b>
+                &nbsp;
+                Start
+            </h2>
+            <p>
+                Hej, jestem Kuba,<br>
+                tworzę <i id="startCycler">rzeczy</i>
+            </p>
+
+        </div>
     </section>
 
     <section id="about">
@@ -77,49 +80,56 @@
     </section>
 
     <section id="contact" class="textSection">
-        <h2>
-            <b>//</b>
-            &nbsp;
-            Kontakt
-        </h2>
+        <div>
+            <h2>
+                <b>//</b>
+                &nbsp;
+                Kontakt
+            </h2>
 
-        <h3>Moje social media</h3>
+            <h3>Znajdź mnie na</h3>
 
-        <div id="socialMedia">
-            <a>
-                asd
-            </a>
-            <a>
-                asd
-            </a>
-            <a>
-                asd
-            </a>
+            <div id="socialMedia">
+                <a>
+                    <img src="static/media/icon-fb.png" alt="">
+                    Facebook
+                </a>
+                <a>
+                    <img src="static/media/icon-gh.png" alt="">
+                    GitHub
+                </a>
+                <a>
+                    <img src="static/media/icon-in.png" alt="">
+                    LinkedIn
+                </a>
+                <a>
+                    <img src="static/media/icon-twt.png" alt="">
+                    Twitter
+                </a>
+            </div>
+
+            <h3>Formularz kontaktowy</h3>
+
+            <form>
+                <label for="name">
+                    <input type="text" id="name" name="name" placeholder="imię" required>
+                </label>
+                <label for="mail">
+                    <input type="email" id="mail" name="mail" placeholder="e-mail" required>
+                </label>
+                <label for="message">
+                    <textarea id="message" name="message" placeholder="wiadomość" required rows="3"></textarea>
+                </label>
+
+                <input type="submit" value="Wyślij">
+            </form>
         </div>
-
-<!--        to delete-->
-
-        <h3>Formularz kontaktowy</h3>
-
-        <form>
-            <label for="name">
-                <input type="text" id="name" name="name" placeholder="imię" required>
-            </label>
-            <label for="mail">
-                <input type="email" id="mail" name="mail" placeholder="e-mail" required>
-            </label>
-            <label for="message">
-                <textarea id="message" name="message" placeholder="message" required rows="3"></textarea>
-            </label>
-
-            <input type="submit" value="Wyślij">
-        </form>
     </section>
 
 
     <footer>
         <p>
-            Wszelkie prawa zastrzeżone &copy; 2024, Jakub Baran
+            &copy; 2024, Jakub Baran
         </p>
     </footer>
 </main>
