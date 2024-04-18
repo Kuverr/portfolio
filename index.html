@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Jakub Baran Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -12,7 +12,7 @@
     <div id="banner">
         <a href="#start">
             <h1>
-                <b>&lt;</b>&nbsp;Kuverr&nbsp;<b>/&gt;</b>
+                <b>&lt;</b>&nbsp;Jakub Baran&nbsp;<b>/&gt;</b>
             </h1>
         </a>
     </div>
@@ -27,19 +27,19 @@
             <p class="menuUnderline"></p>
         </a>
 
-        <a href="#about">
+        <a href="#projects">
             <i>//</i>
             &nbsp;
-            O mnie
+            Projekty
             &nbsp;
             <b>&gt;</b>
             <p class="menuUnderline"></p>
         </a>
 
-        <a href="#projects">
+        <a href="#about">
             <i>//</i>
             &nbsp;
-            Projekty
+            O mnie
             &nbsp;
             <b>&gt;</b>
             <p class="menuUnderline"></p>
@@ -73,10 +73,140 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="projects" class="textSection">
+
+
+        <div>
+            <h2>
+                <b>//</b>
+                &nbsp;
+                Projekty
+            </h2>
+            <div id="slider">
+                <div>
+                    <h2>Kalkulatory</h2>
+                    <img src="static/media/images/slider/kalk.png" alt="kalkulatory">
+                </div>
+                <div>
+                    <h2>Repetytorium INF.03</h2>
+                    <img src="static/media/images/slider/inf03.png" alt="repetytorium">
+                </div>
+                <div>
+                    <h2>Grafika cyfrowa</h2>
+                    <img src="static/media/images/slider/graf.png" alt="grafika">
+                </div>
+                <div>
+                    <h2>Krzyżówka o stronach internetowych</h2>
+                    <img src="static/media/images/slider/krzyz.png" alt="krzyżówka">
+                </div>
+                <div>
+                    <h2>Przepisy wielkanocne</h2>
+                    <img src="static/media/images/slider/wielk.png" alt="przepisy">
+                </div>
+            </div>
+        </div>
+
+        <div id="projectsCompanies">
+            <h2>
+                <b>//</b>
+                &nbsp;
+                Współpraca z firmami
+            </h2>
+
+            <ul>
+                <li>
+                    <b>
+                        GitHub
+                    </b>
+                    <p>
+                        Stanowisko:
+                        <i>Frontend Developer</i>
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Facebook
+                    </b>
+                    <p>
+                        Stanowisko:
+                        <i>Backend Developer</i>
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Twitter / X
+                    </b>
+                    <p>
+                        Stanowisko:
+                        <i>UI / UX Developer</i>
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Microsoft
+                    </b>
+                    <p>
+                        Stanowisko:
+                        <i>Fullstack Developer</i>
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        Google
+                    </b>
+                    <p>
+                        Stanowisko:
+                        <i>DevOps</i>
+                    </p>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="projects">
+    <section id="about" class="textSection">
+        <div id="aboutDetails">
+            <h2>
+                <b>//</b>
+                &nbsp;
+                O mnie
+            </h2>
+            <p>
+                Moje umiejętności:
+            </p>
+            <ul>
+                <li>Praca w zespole</li>
+                <li>Samodzielność</li>
+                <li>Umiejętność rozwiązywania problemów</li>
+                <li>Praca pod presją czasu</li>
+                <li>Adaptacja</li>
+            </ul>
+
+            <p>
+                Technologie, których używam:
+            </p>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div id="aboutCV">
+            <div>
+                <p class="uiIcon" data-icon="arrow" onclick="showCV(this)">
+                </p>
+                <p>
+                    CV
+                </p>
+                <p class="uiIcon" data-icon="download">
+                </p>
+            </div>
+            <img src="static/media/images/curriculumVitae.png" alt="CV" id="imgCV">
+        </div>
     </section>
 
     <section id="contact" class="textSection">
@@ -91,19 +221,19 @@
 
             <div id="socialMedia">
                 <a>
-                    <img src="static/media/icon-fb.png" alt="">
+                    <img src="static/media/icon/png/icon-fb.png" alt="">
                     Facebook
                 </a>
-                <a>
-                    <img src="static/media/icon-gh.png" alt="">
+                <a href="">
+                    <img src="static/media/icon/png/icon-gh.png" alt="">
                     GitHub
                 </a>
                 <a>
-                    <img src="static/media/icon-in.png" alt="">
+                    <img src="static/media/icon/png/icon-in.png" alt="">
                     LinkedIn
                 </a>
                 <a>
-                    <img src="static/media/icon-twt.png" alt="">
+                    <img src="static/media/icon/png/icon-twt.png" alt="">
                     Twitter
                 </a>
             </div>

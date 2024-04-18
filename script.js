@@ -19,7 +19,10 @@ let cyclerContent = [
     'ui/ux',
     'grafiki',
     'loga',
+    'banery',
+    'wizytówki',
     'z pasji',
+    'dla firm',
 ];
 
 function startCycle() {
@@ -74,3 +77,33 @@ function backgroundTest() {
 
     document.querySelector('main').style.backgroundImage = `url('data:image/svg+xml;utf8,${encodeURIComponent(svg)}')`;
 }
+
+function showCV(icon) {
+    let cv = document.querySelector('#imgCV');
+
+    if (cv.style.display === 'block') {
+        cv.style.display = 'none';
+        icon.style.transform = 'rotate(0)';
+        icon.style.background = 'var(--primary)';
+    } else {
+        icon.style.transform = 'rotate(90deg)';
+        cv.style.display = 'block';
+        cv.style.height = 'auto';
+        icon.style.background = 'var(--light)';
+    }
+}
+
+function cycleSlider() {
+    let slider = document.querySelector('#slider');
+    let slides = slider.querySelectorAll('#slider > div');
+
+    let currentSlide = 0;
+
+    setInterval(() => {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
+        slides[currentSlide].style.display = 'flex';
+    }, 5000);
+}
+
+cycleSlider();
