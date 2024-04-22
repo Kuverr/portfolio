@@ -79,17 +79,18 @@ function backgroundTest() {
 }
 
 function showCV(icon) {
+
     let cv = document.querySelector('#imgCV');
 
     if (cv.style.display === 'block') {
         cv.style.display = 'none';
         icon.style.transform = 'rotate(0)';
-        icon.style.background = 'var(--primary)';
+        // icon.style.background = 'var(--primary)';
     } else {
         icon.style.transform = 'rotate(90deg)';
         cv.style.display = 'block';
         cv.style.height = 'auto';
-        icon.style.background = 'var(--light)';
+        // icon.style.background = 'var(--light)';
     }
 }
 
